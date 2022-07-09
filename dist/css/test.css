@@ -1,0 +1,15 @@
+body {
+  background-color: black;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+.wrapper .newgaper {
+  width: 300px;
+}
+/*# sourceMappingURL=test.css.map */

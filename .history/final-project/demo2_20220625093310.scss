@@ -1,0 +1,45 @@
+* {
+  font-family: "poppins", sans-serif;
+}
+$deepColor: #222222;
+$lightColor: #898989;
+$colorModal: #999999;
+$deepColorModel: #222222;
+$colorSticky: #ffffff;
+$color-text: #666666;
+$backGroundSticky: #33363b;
+$backgroudlabel: #ff674d;
+@import "../grid";
+@import "../media";
+.hide-scroll {
+  overflow: hidden;
+}
+body {
+  width: 100%;
+}
+.wrapper-detail-product {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(#222222, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  .detail-product {
+    max-width: 1018px;
+    background-color: #ffffff;
+  }
+}
+@import "menumobile";
+@import "stickyscrolltop";
+@import "stickywrapper";
+@import "loginAndRegister";
+@import "model";
+@import "responsiveheader";
+@import "reponsivebanner";
+@import "product";
+@import "footer";
+@import "_wishlist";
+@import "_cart";
+@import "animation";

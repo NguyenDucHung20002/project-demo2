@@ -1,0 +1,63 @@
+@import "media";
+$cols: 12;
+$gutter: 10px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$gutter/2;
+  //1 to 12 --> 1,2,3,4,...,11
+  //1 thourgh 12 --> 1,2,3,4,...12
+  @for $var from 1 through $cols {
+    @include xs {
+      .col-xs-#{$var} {
+        width: (100% / $cols) * $var;
+        .col-item {
+        }
+      }
+    }
+  }
+  @for $var from 1 through $cols {
+    @include sm {
+      .col-sm-#{$var} {
+        width: (100% / $cols) * $var;
+        padding: $gutter / 2;
+        .col-item {
+          padding: 5px;
+        }
+      }
+    }
+  }
+  @for $var from 1 through $cols {
+    @include md {
+      .col-md-#{$var} {
+        width: (100% / $cols) * $var;
+        padding: $gutter / 2;
+        .col-item {
+          padding: 5px;
+        }
+      }
+    }
+  }
+  @for $var from 1 through $cols {
+    @include lg {
+      .col-lg-#{$var} {
+        width: (100% / $cols) * $var;
+        padding: $gutter / 2;
+        .col-item {
+          padding: 5px;
+        }
+      }
+    }
+  }
+  @for $var from 1 through $cols {
+    @include xl {
+      .col-xl-#{$var} {
+        width: (100% / $cols) * $var;
+        padding: $gutter / 2;
+        .col-item {
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

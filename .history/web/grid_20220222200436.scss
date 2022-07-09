@@ -1,0 +1,12 @@
+$cols: 12;
+$gutter: 20px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  @for $var from 1 through $cols {
+    .col-#{$var} {
+      width: (100% / $cols) * $var;
+      padding: 0 $gutter / 2;
+    }
+  }
+}

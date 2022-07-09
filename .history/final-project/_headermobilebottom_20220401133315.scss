@@ -1,0 +1,40 @@
+$deepColor: #222222;
+$lightColor: #898989;
+$colorModal: #999999;
+$deepColorModel: #222222;
+$colorSticky: #ffffff;
+$color-text: #666666;
+$backGroundSticky: #33363b;
+$backgroudlabel: #ff674d;
+.header-btm-mobile {
+    position: absolute;
+    background-color: rgba(#000, 0.8);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2001;
+    .container{
+        padding: 20px 15px;
+        margin-right: auto !important;
+        max-width: 296px;
+        width: 100%;
+        height: 100%;
+        .header-left {
+            .main-nav {
+                .menu {
+                    .submenu {
+                    }
+                    .mega-menu {
+                      display: none;
+                    }
+                }
+            }
+        }
+        .header-right{
+            .sale{
+                display: none;
+            }
+        }
+    }
+}

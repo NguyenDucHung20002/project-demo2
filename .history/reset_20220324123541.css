@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  /* mặc đinh là text-decoration: underline; */
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+button {
+  outline: none;
+  border: none;
+  background: none;
+}
+table,
+th,
+td {
+  border-collapse: collapse;
+}

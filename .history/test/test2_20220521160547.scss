@@ -1,0 +1,37 @@
+.wrpaper-btn{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  .btn{
+    margin-bottom: 5px;
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+  }
+}
+.active-added-product{
+  position: absolute;
+  bottom: 100px;
+  left: -200px;
+  &:last-child{
+
+  }
+  .added-product{
+    width: 200px;
+    height: 180px;
+    background-color: white;
+    box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.21);
+    margin-top: 30px;
+  }
+}
+@keyframes show {
+  to{
+    opacity: 1;
+    left: 100px;
+  }
+}

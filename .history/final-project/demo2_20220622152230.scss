@@ -1,0 +1,110 @@
+* {
+  font-family: "poppins", sans-serif;
+}
+$deepColor: #222222;
+$lightColor: #898989;
+$colorModal: #999999;
+$deepColorModel: #222222;
+$colorSticky: #ffffff;
+$color-text: #666666;
+$backGroundSticky: #33363b;
+$backgroudlabel: #ff674d;
+@import "../grid";
+@import "../media";
+.hide-scroll {
+  overflow: hidden;
+}
+body {
+  overflow: hidden;
+  width: 100%;
+}
+
+.wrapper-login-register {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(#222222, 0.8);
+  z-index: 9000;
+  .login-or-register {
+    margin: 0 auto;
+    background-color: #ffffff;
+    max-width: 490px;
+    padding: 40px;
+    .get-form {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 25px;
+      button {
+        color: #999999;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        text-transform: capitalize;
+        padding: 5px;
+        transition: 0.3s;
+      }
+      h3 {
+        color: #cccccc;
+        font-size: 18px;
+        line-height: 28.8px;
+        font-weight: 200;
+      }
+    }
+    form {
+      .login {
+        .form-control {
+          display: block;
+          width: 100%;
+          border: #e1e1e1 1px solid;
+          padding: 10px;
+          margin-bottom: 15px;
+          &::placeholder {
+            color: #999999;
+            transition: 0.5s;
+          }
+          &:focus {
+            &::placeholder {
+              opacity: 0;
+            }
+          }
+        }
+        .action {
+          display: flex;
+          justify-content: space-between;
+          .remember {
+            .custom-checkbox {
+              width: 10px;
+              height: 10px;
+            }
+            label {
+              color: #666666;
+              font-size: 12px;
+              line-height: 20.64px;
+              padding: 0px 0px 0px 26px;
+              &::after {
+                content: "\f00c";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 700;
+              }
+            }
+          }
+          .loseing-pass {
+          }
+        }
+      }
+    }
+  }
+}
+@import "menumobile";
+@import "stickyscrolltop";
+@import "stickywrapper";
+@import "model";
+@import "responsiveheader";
+@import "reponsivebanner";
+@import "product";
+@import "footer";
+@import "_wishlist";
+@import "_cart";
+@import "animation";

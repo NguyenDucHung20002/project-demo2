@@ -1,0 +1,70 @@
+@mixin liMainInNav {
+  margin-right: 30px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 13px 0;
+    letter-spacing: -0.35px;
+    line-height: 14px;
+    color: $deepColor;
+    position: relative;
+    @content;
+  }
+}
+.header-bottom {
+  margin-bottom: 15px;
+  .container {
+    .header-left {
+      .main-nav {
+        margin-left: 3px;
+        .menu {
+          display: flex;
+
+          .submenu {
+            @include liMainInNav {
+              i {
+                margin-left: 8px;
+                font-size: 13px;
+              }
+
+              &:hover {
+                &::before {
+                  width: 100%;
+                  right: auto;
+                }
+              }
+              &::before {
+                content: "";
+                position: absolute;
+                height: 1.5px;
+                right: 0;
+                bottom: 10px;
+                width: 0;
+                background: $deepColor;
+                transition: all 0.5s ease;
+              }
+            }
+          }
+          .active {
+            @include liMainInNav {
+              &::before {
+                content: "";
+                position: absolute;
+                height: 1.5px;
+                right: 0;
+                bottom: 10px;
+                width: 100%;
+                background: $deepColor;
+                transition: all 0.5s ease;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

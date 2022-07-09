@@ -1,0 +1,191 @@
+
+header {
+  position: relative;
+  .divider {
+    width: 1px;
+    height: 25px;
+    background-color: #e1e1e1;
+    margin: 0px -3px 0px 20px;
+  }
+  @include mobile {
+    .header-top {
+      .header-left {
+        overflow: hidden;
+        p {
+          white-space: nowrap;
+          transform: translate(0);
+          animation: 6s 1s linear run-around-once,
+            10s 7s infinite linear run-around-infinity;
+        }
+      }
+    }
+    .header-meddle {
+      .header-right {
+        .dropdwon-like {
+          display: none;
+        }
+      }
+    }
+  }
+  @include xsToSm {
+    @import "headertop";
+    .header-top {
+      .contact,
+      .help,
+      .Sign-in,
+      .register,
+      .delimiter,
+      .divider {
+        display: none;
+      }
+    }
+    .header-meddle {
+      .input {
+        display: none;
+      }
+    }
+  }
+  @include xsToMd {
+    @import "headermeddle";
+    .header-meddle {
+      .header-left {
+        .mobile-menu {
+          display: inline-block;
+          color: $deepColor;
+          font-size: 25px;
+          font-weight: 700;
+          letter-spacing: -0.35px;
+          line-height: 25px;
+          margin-right: 20px;
+        }
+      }
+      .header-right {
+        .item-call {
+          .call-content {
+            display: none;
+          }
+          i {
+            margin-right: 0px !important;
+          }
+        }
+        .divider {
+          display: none;
+        }
+        .cart-lable {
+          margin-right: 0px !important;
+          .cart-content {
+            margin: 0 15px 0 0 !important;
+            .cart-name,
+            .cart-price {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    @import "headermobilebottom";
+  }
+  @include md {
+    @import "headertop";
+    .header-top {
+      .dropdown {
+        display: block;
+      }
+      .contact,
+      .help {
+        display: none;
+      }
+    }
+    @import "headermeddle";
+    .header-meddle {
+      .header-left {
+        .home-item {
+          margin-right: 20px !important;
+        }
+      }
+    }
+  }
+  @include lg {
+    @import "headertop";
+    .header-top {
+      .contact,
+      .help {
+        display: block;
+      }
+    }
+    @import "headermeddle";
+    .header-meddle {
+      .header-left {
+        .mobile-menu {
+          display: none;
+        }
+        .home-item {
+          margin-right: 20px !important;
+        }
+      }
+      .header-right {
+        .item-call {
+          .call-content {
+            display: inline-block;
+          }
+          i {
+            margin-right: 12px !important;
+          }
+        }
+        .divider {
+          display: inline-block;
+        }
+        .cart-lable {
+          .cart-content {
+            margin: 0 15px 0 20px !important;
+            .cart-name,
+            .cart-price {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+    @import "headerbottom";
+    .header-bottom {
+      display: block;
+      .header-left {
+        .submenu-container {
+          display: none;
+        }
+        .submenu,
+        .active {
+          margin-right: 15px !important;
+        }
+      }
+    }
+  }
+  @include xl {
+    @import "headermeddle";
+    .header-meddle {
+      .header-left {
+        .mobile-menu {
+          display: none;
+        }
+        .home-item {
+          margin-right: 80px !important;
+        }
+        .input {
+          margin-right: 20px !important;
+        }
+      }
+    }
+    @import "headerbottom";
+    .header-bottom {
+      .header-left {
+        .submenu-container {
+          display: block;
+        }
+        .submenu,
+        .active {
+          margin-right: 30px !important;
+        }
+      }
+    }
+  }
+}

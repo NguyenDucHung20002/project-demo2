@@ -1,0 +1,82 @@
+@keyframes item-move {
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes item-blurred {
+  to {
+    filter: blur(0px);
+  }
+}
+@keyframes run-around-once {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes run-around-infinity {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes model-wrapper {
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes model-content {
+  to {
+    transform: rotateX(0);
+  }
+}
+@keyframes active-scroll {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes hide-scroll {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    transform: translateY(50%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes item-move-top {
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes show {
+  to {
+    transform: translate(0);
+  }
+}
+@keyframes hideY {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}

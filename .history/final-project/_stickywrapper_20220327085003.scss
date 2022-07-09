@@ -1,0 +1,60 @@
+$deepColor: #222222;
+$lightColor: #898989;
+$colorSticky: #ffffff;
+$backGroundSticky: #33363b;
+$color-text: #666666;
+@import "../media";
+@include xsToMd {
+  .sticky-wrapper {
+    display: none;
+  }
+}
+@include md {
+  .sticky-wrapper {
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 200px;
+    overflow: hidden;
+    z-index: 8;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      li {
+        margin-bottom: 5px;
+        //transform: translateX(74%);
+        a {
+          background-color: $backGroundSticky;
+          overflow: hidden;
+          border-radius: 3px;
+          display: flex;
+          align-items: center;
+          &:hover {
+            span {
+              max-width: 150px;
+              margin-right: 10px;
+            }
+          }
+          i {
+            width: 42px;
+            height: 42px;
+            color: $colorSticky;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          span {
+            transition: all 0.2s ease-out;
+            color: $colorSticky;
+            max-width: 0;
+            font-size: 14px;
+            font-weight: 600;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}

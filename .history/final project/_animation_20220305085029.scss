@@ -1,0 +1,11 @@
+@keyframes item-1 {
+  to {
+    .item-1 {
+      h4,
+      h2 {
+        transform: translate(20px);
+        opacity: 1;
+      }
+    }
+  }
+}

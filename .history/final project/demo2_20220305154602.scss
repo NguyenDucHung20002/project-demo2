@@ -1,0 +1,106 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+$color-text: #666666;
+@mixin forcusA {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 12px;
+  margin: 0px 2px 0px 23px;
+  transition: 0.4s;
+  &:hover {
+    color: #222222;
+  }
+  @content;
+}
+header {
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 100px;
+  .container {
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        color: $color-text;
+        font-size: 13px;
+        letter-spacing: -0.15px;
+        line-height: 18px;
+        padding: 11px 0px;
+      }
+      .header-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: $color-text;
+        .nav-top {
+          a {
+            @include forcusA {
+              color: $color-text;
+              i {
+                font-size: 17px;
+                margin: 0px 7px 0px 0px;
+              }
+            }
+          }
+        }
+        .divider {
+          width: 1px;
+          height: 25px;
+          background-color: #e1e1e1;
+          margin: 0px -3px 0px 20px;
+        }
+        .delimiter {
+          color: #aaaaaa;
+          font-size: 20px;
+          margin: 0 -15px 0 5px;
+        }
+        .dropdown {
+          padding: 9px 0;
+          position: relative;
+          @include forcusA {
+            font-size: 11px;
+            i {
+              font-size: 11px;
+              margin: auto 0px 0px 7px;
+            }
+          }
+          &:hover {
+            transition: 2s;
+            .dropdown-box {
+              display: block;
+              top: 100%;
+            }
+          }
+          .dropdown-box {
+            position: absolute;
+            display: none;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.21);
+            padding: 5px 0;
+            top: 70%;
+            right: 0;
+            li {
+              a {
+                @include forcusA {
+                  margin: 0;
+                  font-size: 11px;
+                  color: $color-text;
+                  padding: 6px 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@import "banner";
+@import "animation";

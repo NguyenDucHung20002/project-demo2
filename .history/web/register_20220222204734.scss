@@ -1,0 +1,17 @@
+@import "grid";
+@import "media";
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.products {
+  .container {
+    .row {
+      img {
+        max-width: 100%;
+      }
+      h2 {
+      }
+    }
+  }
+}

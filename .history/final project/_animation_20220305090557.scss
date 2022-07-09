@@ -1,0 +1,12 @@
+@keyframes item-right {
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes item-up {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

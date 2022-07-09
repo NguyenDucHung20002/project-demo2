@@ -1,0 +1,20 @@
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.banner {
+  .container {
+    .banner-items {
+      position: relative;
+      .owl-dots {
+        position: absolute;
+        .owl-dot {
+          span {
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}

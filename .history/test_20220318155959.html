@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="dist/css/test.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="btns">
+      <button class="active-btn" data-filter="*">ALL</button>
+      <button data-filter=".category-1">category 1</button>
+      <button data-filter=".category-2">category 2</button>
+    </div>
+    <div class="demo">
+      <img class="all category-2" src="https://picsum.photos/900/900" alt="" />
+      <img class="category-1" src="https://picsum.photos/900/901" alt="" />
+      <img
+        class="category-2 category-1"
+        src="https://picsum.photos/901/901"
+        alt=""
+      />
+      <img class="category-2" src="https://picsum.photos/901/900" alt="" />
+      <img class="category-1" src="https://picsum.photos/902/900" alt="" />
+      <img class="category-1" src="https://picsum.photos/901/902" alt="" />
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="/scripts/test.js"></script>
+</html>

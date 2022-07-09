@@ -1,0 +1,166 @@
+$colorModal: #999999;
+$deepColorModel: #222222;
+$colorSticky: #ffffff;
+$color-text: #666666;
+@import "animation";
+.hide-scroll {
+  overflow-y: hidden;
+}
+.model {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba($deepColor, 0.7);
+  position: fixed;
+  display: none;
+  // visibility: hidden;
+  // animation: model-wrapper 1s forwards;
+  .line-holder {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    perspective: 300px;
+    .model-wrapper {
+      transform: rotateX(10deg);
+      animation: model-content 1s forwards;
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      background-color: white;
+      background: url("https://d-themes.com/html/riode/images/newsletter-popup.jpg")
+        no-repeat 60% center;
+      max-width: 720px;
+      border-radius: 10px;
+      position: relative;
+      .model-close {
+        button {
+          font-size: 24px;
+          position: absolute;
+          right: 0;
+          top: -8%;
+          color: $colorSticky;
+          transition: all 0.4s;
+          &:hover {
+            transform: scale(1.3) rotate(90deg);
+          }
+        }
+      }
+      .model-content {
+        h4 {
+          color: $deepColorModel;
+          font-size: 20px;
+          font-weight: 800;
+          line-height: 24px;
+          margin: 0px 0px 6px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        h2 {
+          color: $deepColorModel;
+          font-size: 32px;
+          font-weight: 600;
+          letter-spacing: -1.4px;
+          line-height: 38.4px;
+          margin: 0px 0px 7px;
+          text-align: center;
+          span {
+            text-transform: uppercase;
+            font-weight: 800;
+          }
+        }
+        p {
+          color: $colorModal;
+          font-size: 14px;
+          line-height: 23.8px;
+          margin: 0px 2px 25px;
+          text-align: center;
+        }
+        .input-group {
+          display: flex;
+          margin-bottom: 26px;
+          input {
+            display: inline-block;
+            font-size: 12px;
+            line-height: 18px;
+            padding: 8.5px 12px;
+            border-radius: 3px 0px 0px 3px;
+            border: 1px solid $deepColorModel;
+            flex: 1;
+            height: 45px;
+            color: $colorModal;
+            &:focus {
+              &::placeholder {
+                opacity: 0;
+              }
+            }
+            &::placeholder {
+              transition: 0.2s;
+              color: $colorModal;
+            }
+          }
+          .submit-model {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 13px;
+            padding: 6.5px 19.5px;
+            text-align: center;
+            border-radius: 0px 3px 3px 0px;
+            text-transform: uppercase;
+            color: $colorSticky;
+            background-color: $deepColorModel;
+          }
+        }
+        .dont-show {
+          input {
+            margin-right: 4px;
+            &:checked ~ label::after {
+              opacity: 1;
+            }
+          }
+          label {
+            font-size: 12px;
+            line-height: 19.2px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            &::after {
+              content: "\f00c";
+              font-family: "Font Awesome 5 Free";
+              font-weight: 700;
+              font-size: 10px;
+              width: 18px;
+              height: 18px;
+              border: 1px solid $deepColorModel;
+              position: absolute;
+              top: 50%;
+              left: -14.5%;
+              transform: translateY(-50%);
+              border-radius: 3px;
+              background-color: $deepColorModel;
+              color: $colorSticky;
+              line-height: 18px;
+              opacity: 0;
+              transition: 0.2s;
+            }
+            &::before {
+              content: "";
+              width: 18px;
+              height: 18px;
+              border: 1px solid $deepColorModel;
+              position: absolute;
+              top: 50%;
+              left: -14.5%;
+              transform: translateY(-50%);
+              border-radius: 3px;
+              background-color: $colorSticky;
+            }
+          }
+        }
+      }
+    }
+  }
+}

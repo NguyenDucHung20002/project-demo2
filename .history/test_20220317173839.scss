@@ -1,0 +1,9 @@
+@import "grid";
+body {
+  padding: 50px;
+}
+.row {
+  .col-xl-6 {
+    box-shadow: 0 0 4px -2px;
+  }
+}

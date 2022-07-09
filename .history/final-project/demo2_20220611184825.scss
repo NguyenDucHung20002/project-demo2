@@ -1,0 +1,40 @@
+* {
+  font-family: "poppins", sans-serif;
+}
+$deepColor: #222222;
+$lightColor: #898989;
+$colorModal: #999999;
+$deepColorModel: #222222;
+$colorSticky: #ffffff;
+$color-text: #666666;
+$backGroundSticky: #33363b;
+$backgroudlabel: #ff674d;
+@import "../grid";
+@import "../media";
+.hide-scroll {
+  overflow: hidden;
+}
+body {
+  width: 100%;
+}
+
+@import "menumobile";
+@import "stickyscrolltop";
+@import "stickywrapper";
+@import "model";
+@import "responsiveheader";
+@import "reponsivebanner";
+@import "product";
+footer {
+  background-color: #222222;
+  padding: 86px 10px 46px;
+  .footer-middle {
+    img {
+      width: 150px;
+      height: 43px;
+    }
+  }
+}
+@import "_wishlist";
+@import "_cart";
+@import "animation";

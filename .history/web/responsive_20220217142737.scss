@@ -1,0 +1,31 @@
+@import 'media';
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    box-shadow: 0px 2px 4px -2px #333;
+    padding: 20px 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            color: #1abc9c;
+        }
+        nav{
+            ul{
+                display: flex;
+                li{
+                    margin-left: 20px;
+                    
+                }
+            }
+        }
+        button{
+            @include xs{
+                color: red;
+            }
+        }
+    }
+}

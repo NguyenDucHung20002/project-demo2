@@ -1,0 +1,16 @@
+body{
+    background-color: pink;
+}
+.cart{
+    width: 100px;
+    height: 50px;
+    background-color: rgba(204, 83, 104, 0.507);
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    text-align: center;
+    i{
+        line-height: 50px;
+        color: rgb(241, 241, 241);
+    }
+}

@@ -1,0 +1,15 @@
+$screens: (
+  xs: 576px,
+  sm: 567px,
+  md: 768,
+  lg: 992,
+  xl: 1200,
+);
+@mixin media($key...) {
+  @each $key in $keys {
+    @if ($key = "xs") {
+      @media (max-width: map-get($screens, $key)) {
+      }
+    }
+  }
+}

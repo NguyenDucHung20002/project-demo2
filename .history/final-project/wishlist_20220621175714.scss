@@ -1,0 +1,35 @@
+* {
+  font-family: "poppins", sans-serif;
+}
+$deepColor: #222222;
+$lightColor: #898989;
+$colorModal: #999999;
+$deepColorModel: #222222;
+$colorSticky: #ffffff;
+$color-text: #666666;
+$backGroundSticky: #33363b;
+$backgroudlabel: #ff674d;
+.hide-scroll {
+  overflow: hidden;
+}
+body {
+  width: 100%;
+}
+.page-wrapper {
+  transition: 0.5s;
+  z-index: 2000;
+}
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@import "../grid";
+@import "../media";
+@import "stickyscrolltop";
+@import "stickywrapper";
+@import "responsiveheader";
+@import "footer";
+@import "_wishlist";
+@import "_cart";
+@import "animation";

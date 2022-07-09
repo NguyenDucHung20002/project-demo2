@@ -1,0 +1,21 @@
+$deepColor: #222222;
+$lightColor: #898989;
+$colorModal: #999999;
+$deepColorModel: #222222;
+$colorSticky: #ffffff;
+$color-text: #666666;
+$backGroundSticky: #33363b;
+$backgroudlabel: #ff674d;
+.header-bottom {
+    position: absolute;
+    background-color: rgba($backGroundSticky, 0.5);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2001;
+    .container{
+
+        display: none;
+    }
+}

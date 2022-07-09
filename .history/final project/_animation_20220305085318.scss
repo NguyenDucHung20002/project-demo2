@@ -1,0 +1,20 @@
+@keyframes item-1 {
+  from {
+    .item-1 {
+      h4,
+      h2 {
+        transform: translate(-20px);
+        opacity: 0;
+      }
+    }
+  }
+  to {
+    .item-1 {
+      h4,
+      h2 {
+        transform: translate(20px);
+        opacity: 1;
+      }
+    }
+  }
+}

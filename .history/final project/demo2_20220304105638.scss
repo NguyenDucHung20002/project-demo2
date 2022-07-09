@@ -1,0 +1,114 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.banner {
+  .container {
+    .banner-items {
+      position: relative;
+      .owl-item {
+        position: relative;
+        .item-1 {
+          .contents {
+            color: #ffffff;
+            position: absolute;
+            top: 50%;
+            left: 53%;
+            transform: translate(-50%, -50%);
+            h4 {
+              font-size: 30px;
+              font-weight: 600;
+              line-height: 30px;
+              text-align: left;
+            }
+            h2 {
+              font-size: 80px;
+              font-weight: 800;
+              letter-spacing: 16px;
+              line-height: 88px;
+              margin: 0px 0px 1px;
+              text-align: center;
+              text-transform: uppercase;
+            }
+            h5 {
+              font-size: 30px;
+              line-height: 30px;
+              margin: 0px 0px 5px;
+              text-align: right;
+              span {
+                color: #ff675d;
+              }
+            }
+          }
+        }
+        .item-2 {
+          .contents {
+            color: #ffffff;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 95px;
+          }
+          h3 {
+            font-size: 30px;
+            letter-spacing: -0.75px;
+            line-height: 30px;
+            margin: 0 0 2px;
+          }
+          h4 {
+          }
+          h5 {
+          }
+          p {
+          }
+          a {
+          }
+        }
+      }
+
+      .owl-dots {
+        position: absolute;
+        display: flex;
+        bottom: 50px;
+        right: 50%;
+        transform: translateX(50%);
+        .owl-dot {
+          max-width: 30px;
+          justify-content: center;
+          &:last-child {
+            margin-right: auto;
+            span {
+              right: auto;
+            }
+          }
+          span {
+            width: 8px;
+            height: 8px;
+            margin: 5px;
+            background-color: #cdcdcd;
+            transition: 0.2s;
+            &:hover {
+              background-color: #666666;
+            }
+          }
+          &.active {
+            span {
+              width: 18px;
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes banner {
+  to {
+    opacity: 1;
+  }
+}

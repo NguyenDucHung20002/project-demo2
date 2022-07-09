@@ -1,0 +1,29 @@
+.form-field {
+  margin: 30px;
+  position: relative;
+  .input {
+    background-color: #f4f4f4;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #718096;
+    padding: 0 50px;
+    width: 500px;
+    height: 50px;
+    transition: 0.25s;
+    display: block;
+    outline: none;
+    font-size: 18px;
+    transition: 0.25s;
+
+    &:focus {
+      border-color: pink;
+    }
+  }
+  i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    color: #718096;
+  }
+}

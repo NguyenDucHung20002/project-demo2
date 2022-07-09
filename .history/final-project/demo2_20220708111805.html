@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../dist/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../dist/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../dist/css/demo2.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,600&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <title>Riode - Ultimate eCommerce Template</title>
+    <link rel="icon" href="icon/logo-footer (3).png">
+</head>
+
+<body>
+    <div class="wrapper-all">
+        <div class="wrapper-detail-product">
+            <div class="detail-product row">
+                <div class="detail-img col-md-6 col-xs-sm-12">
+                    <div class="slider-main">
+                        <div class="wrapper-img">
+                            <div class="slider-img">
+                                <img src="icon/view-small-1.jpg" />
+                            </div>
+                            <div class="slider-img">
+                                <img src="icon/view-small-2.jpg" />
+                            </div>
+                            <div class="slider-img">
+                                <img src="icon/view-small-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prev direction"><i class="fa-solid fa-angle-left prev-dir"></i></div>
+                    <ul class="slider-dots">
+                        <li class="slider-dot-items action-dot" data-id="0"></li>
+                        <li class="slider-dot-items" data-id="1"></li>
+                        <li class="slider-dot-items" data-id="2"></li>
+                    </ul>
+                    <div class="next direction"><i class="fa-solid fa-angle-right next-dir"></i></div>
+                </div>
+                <div class="detailed-product-content col-md-6 col-xs-sm-12">
+                    <div class="name-product">Converse Training Shoes</div>
+                    <div class="origin">
+                        <div class="sku">SKU: 12345670</div>
+                        <div class="brand">BRAND: The Northland</div>
+                    </div>
+                    <div class="price">$113.00</div>
+                    <div class="rating-content">
+                        <div class="rating-star">
+                            <div class="hover-stars">4.00</div>
+                            ${renderstars(val.stars)}
+                        </div>
+                        <div class="review">( ${val.review} Reviews )</div>
+                    </div>
+                    <p class="product-content">
+                        Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu
+                        augue. Morbi purus liberpuro ate vol faucibus adipiscing.
+                    </p>
+                    <div class="product-size">
+                        <a href="" class="size">M</a>
+                        <a href="" class="size">L</a>
+                    </div>
+                    <div class="action-product-cart">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stickys">
+            <div class="wrapper-sticky-cart"></div>
+            <div class="sticky-cart">
+                <div class="header-cart">
+                    <h2>SHOPPING CART</h2>
+                    <div class="close-cart">close <i class="fa-solid fa-arrow-right-long"></i></div>
+                </div>
+                <div class="wrapper-cart"></div>
+                <div class="subtotal">
+                    <div class="title-total">Subtotal:</div>
+                    <div class="total"><span>$0.00</span></div>
+                </div>
+                <div class="go-to-check">GO TO CHECKOUT</div>
+            </div>
+            <div class="wrapper-sticky-wishlist">
+            </div>
+            <div class="sticky-wishlist">
+                <div class="header-wishlist">
+                    <h2>WISHLIST</h2>
+                    <div class="close-wishlist">close <i class="fa-solid fa-arrow-right-long"></i></div>
+                </div>
+                <div class="wrapper-wishlist">
+                </div>
+                <div class="go-to-wishlist">GO TO WISHLIST</div>
+            </div>
+
+            <div class="sticky-menu-mobile">
+                <ul class="nav-mobile">
+                    <li class="home-mobile"><a href=""><i class="fa-solid fa-house"></i>home</a></li>
+                    <li class="categoties-mobile"><a href=""><i class="fa-solid fa-bars"></i> categories</a></li>
+                    <li class="wishlist-mobile"><a href="#"><i class="fa-regular fa-heart"></i> wishlist</a></li>
+                    <li class="account-mobile"><a href=""><i class="fa-regular fa-user"></i> account</a></li>
+                    <li class="search-mobile"><a href=""><i class="fa-solid fa-magnifying-glass"></i>search</a></li>
+                </ul>
+            </div>
+            <div class="sticky-wrapper">
+                <ul>
+                    <li><a href="">
+                            <i class="fas fa-home"></i>
+                            <span>Demons</span>
+                        </a></li>
+                    <li><a href="">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Documentation</span>
+                        </a></li>
+                    <li><a href="">
+                            <i class="fas fa-star"></i>
+                            <span>Reviews</span>
+                        </a></li>
+                    <li><a href="">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Buy Now!</span>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="sticky-scroll">
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
+        </div>
+        <div class="model">
+            <div class="line-holder">
+                <div class="model-wrapper">
+                    <div class="model-close">
+                        <button><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="model-content">
+                        <h4>up to 20% off</h4>
+                        <h2>Sign up to <span>Riode</span></h2>
+                        <p>Subscribe to the Riode eComerce newsletter to receive timely updates from your favorite
+                            products</p>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email adress here...">
+                            <button class="submit-model">Submit</button>
+                        </div>
+                        <div class="dont-show">
+                            <input id="show" type="checkbox">
+                            <label for="show">Don't show this popup again</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <header>
+                <div class="header-top">
+                    <div class="container">
+                        <div class="header-left">
+                            <P>Welcome to Riode store message or remove it!</P>
+                        </div>
+                        <div class="header-right">
+                            <div class="dropdown">
+                                USD<i class="fa-solid fa-angle-down"></i>
+                                <ul class="dropdown-box">
+                                    <li><a href="">USD</a> </li>
+                                    <li><a href="">EUR</a> </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown eng">
+                                ENG<i class="fa-solid fa-angle-down"></i>
+                                <ul class="dropdown-box">
+                                    <li><a href="">ENG</a> </li>
+                                    <li><a href="">FRH</a> </li>
+                                </ul>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="nav-top contact">
+                                <a href=""><i class="fa-solid fa-location-dot"></i>Contact</a>
+                            </div>
+                            <div class="nav-top help">
+                                <a href=""><i class="fa-solid fa-circle-info"></i>Need Help</a>
+                            </div>
+                            <div class="nav-top Sign-in">
+                                <a class="get-login" href="#"><i class="fa-solid fa-user"></i>Sign in</a>
+                            </div>
+                            <div class="delimiter">/</div>
+                            <div class="nav-top register">
+                                <a class="get-register" href="#"></i>Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-meddle">
+                    <div class="container">
+                        <div class="header-left">
+                            <a href="#" class="mobile-menu"><i class="fa-solid fa-bars"></i></a>
+                            <a href="" class="home-item"><img src="icon/logo.png" alt=""></a>
+                            <div class="input">
+                                <input type="text" placeholder="Search...">
+                                <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                        <div class="header-right">
+                            <a href="" class="item-call">
+                                <i class="fa-solid fa-phone"></i>
+                                <div class="call-content">
+                                    <h4>call us now:</h4>
+                                    <p>0(800) 123-456</p>
+                                </div>
+                            </a>
+                            <div class="divider"></div>
+                            <div class="dropdwon-like">
+                                <div class="icon-like"><i class="fa-regular fa-heart"></i></i></div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="cart-lable">
+                                <div class="cart-content">
+                                    <p class="cart-name">Shopping cart:</p>
+                                    <p class="cart-price">$0.00</p>
+                                </div>
+                                <div class="icon-bag">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    <div class="cart-quantity">0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom header-btm-mobile">
+                    <div class="close-menu-mobile"></div>
+                    <div class="container container-menu-mobile">
+                        <div class="input-wrapper-menu">
+                            <input type="text" placeholder="Search your keyword...">
+                            <button class="search-wrapper-menu"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <div class="header-left content-menu-mobile">
+                            <nav class="main-nav">
+                                <ul class="menu">
+                                    <li class="active">
+                                        <a href="">Home</a>
+                                    </li>
+                                    <li class="submenu">
+                                        <a href="">Categories<i data-toggle="false"
+                                                class="fa-solid fa-angle-down btn-dropdown-main-menu"></i></a>
+                                        <div class="mega-menu mega-menu-mobile">
+                                            <div class="row">
+                                                <div class="col-md-3 submenu-mobile">
+                                                    <h4>VARIATIONS 1 <i data-toggle="false"
+                                                            class="fa-solid fa-angle-down btn-dropdown-middle-menu"></i>
+                                                    </h4>
+                                                    <ul class="mega-menu-two-mobile">
+                                                        <li><a href="">Classic Filter</a></li>
+                                                        <li><a href="">Left Toggle Filter</a></li>
+                                                        <li><a href="">Right Toggle Sidebar</a></li>
+                                                        <li><a href="">Horizontal Filter</a></li>
+                                                        <li><a href="">Navigation Filter</a></li>
+                                                        <li><a href="">Off-Canvas Filter</a></li>
+                                                        <li><a href="">Top Banner</a></li>
+                                                        <li><a href="">Inner Top Banner</a></li>
+                                                        <li><a href="">With Bottom Block</a></li>
+                                                        <li><a href="">Category In Page Header</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3 submenu-mobile">
+                                                    <h4>VARIATIONS 2 <i data-toggle="false"
+                                                            class="fa-solid fa-angle-down btn-dropdown-middle-menu"></i>
+                                                    </h4>
+                                                    <ul class="mega-menu-two-mobile">
+                                                        <li><a href="">3 Columns Mode</a></li>
+                                                        <li><a href="">4 Columns Mode</a></li>
+                                                        <li><a href="">5 Columns Mode</a></li>
+                                                        <li><a href="">6 Columns Mode</a></li>
+                                                        <li><a href="">7 Columns Mode</a></li>
+                                                        <li><a href="">8 Columns Mode</a></li>
+                                                        <li><a href="">List Mode</a></li>
+                                                        <li><a href="">Pagination</a></li>
+                                                        <li><a href="">Infinite Ajaxscroll</a></li>
+                                                        <li><a href="">Loadmore Button</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3 submenu-mobile">
+                                                    <h4>VARIATIONS 3<i data-toggle="false"
+                                                            class="fa-solid fa-angle-down btn-dropdown-middle-menu"></i>
+                                                    </h4>
+                                                    <ul class="mega-menu-two-mobile">
+                                                        <li><a href="">Category Grid Shop</a></li>
+                                                        <li><a href="">Category + Products</a></li>
+                                                        <li><a href="">Shop Default 1</a></li>
+                                                        <li><a href="">Shop Default 2</a></li>
+                                                        <li><a href="">Shop Default 3</a></li>
+                                                        <li><a href="">Shop Default 4</a></li>
+                                                        <li><a href="">Shop Default 5</a></li>
+                                                        <li><a href="">Shop Default 6</a></li>
+                                                        <li><a href="">Shop Default 7</a></li>
+                                                        <li><a href="">Shop Default 8</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3 col-img">
+                                                    <img src="https://d-themes.com/html/riode/images/menu/banner-1.jpg"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="submenu">
+                                        <a href="">Products<i data-toggle="false"
+                                                class="fa-solid fa-angle-down btn-dropdown-main-menu"></i></a>
+                                        <div class="mega-menu cover-1130 mega-menu-mobile">
+                                            <div class="row">
+                                                <div class="col-md-3 submenu-mobile">
+                                                    <h4>PRODUCT PAGES<i data-toggle="false"
+                                                            class="fa-solid fa-angle-down btn-dropdown-middle-menu"></i>
+                                                    </h4>
+                                                    <ul class="mega-menu-two-mobile">
+                                                        <li><a href="">Simple Product</a></li>
+                                                        <li><a href="">Featured & On Sale</a> </li>
+                                                        <li><a href="">Variable Product</a></li>
+                                                        <li><a href="">Variation Swatch Product</a></li>
+                                                        <li><a href="">Grouped Product</a></li>
+                                                        <li><a href="">External Product</a></li>
+                                                        <li><a href="">In Stock Product</a></li>
+                                                        <li><a href="">Out of Stock Product</a></li>
+                                                        <li><a href="">Upsell Products</a></li>
+                                                        <li><a href="">Cross Sell Products</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3 submenu-mobile">
+                                                    <h4>PRODUCT PAGES <i data-toggle="false"
+                                                            class="fa-solid fa-angle-down btn-dropdown-middle-menu"></i>
+                                                    </h4>
+                                                    <ul class="mega-menu-two-mobile">
+                                                        <li><a href="">Vertical thumb</a></li>
+                                                        <li><a href="">Horizontal Thumb</a></li>
+                                                        <li><a href="">Gallery Type</a></li>
+                                                        <li><a href="">Grid Images</a></li>
+                                                        <li><a href="">Masonry Images</a></li>
+                                                        <li><a href="">Sticky Info</a></li>
+                                                        <li><a href="">Left & Right Sticky</a></li>
+                                                        <li><a href="">With Left Sidebar</a></li>
+                                                        <li><a href="">With Right Sidebar</a></li>
+                                                        <li><a href="">Full Width Layout</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3 submenu-mobile">
+                                                    <h4>PRODUCT FEATURES<i data-toggle="false"
+                                                            class="fa-solid fa-angle-down btn-dropdown-middle-menu"></i>
+                                                    </h4>
+                                                    <ul class="mega-menu-two-mobile">
+                                                        <li><a href="">Sale Countdown</a></li>
+                                                        <li><a href="">Hurry Up Notificcation</a></li>
+                                                        <li><a href="">Attribute Guide</a></li>
+                                                        <li><a href="">Add Cart Sticky</a></li>
+                                                        <li><a href="">Labels on Thumbnail</a></li>
+                                                        <li><a href="">More Description Tabs</a></li>
+                                                        <li><a href="">Data in Accordion</a></li>
+                                                        <li><a href="">Data Inside</a> </li>
+                                                        <li><a href="">Video Thumbnail</a> </li>
+                                                        <li><a href="">360 Degree Thumbnail</a> </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3 col-img">
+                                                    <img src="https://d-themes.com/html/riode/images/menu/banner-2.jpg"
+                                                        alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="submenu">
+                                        <a href="#">Pages<i data-toggle="false"
+                                                class="fa-solid fa-angle-down btn-dropdown-main-menu"></i></a>
+                                        <div class="mega-menu a-col mega-menu-mobile">
+                                            <ul>
+                                                <li><a href="">About</a></li>
+                                                <li><a href="">Contact Us</a></li>
+                                                <li><a href="">My Account</a></li>
+                                                <li><a href="">Wishlist</a></li>
+                                                <li><a href="">FAQs</a></li>
+                                                <li class="drdw-sub submenu-mobile">
+                                                    <a href="">Error 404<i data-toggle="false"
+                                                            class="fa-solid fa-angle-down btn-dropdown-middle-menu"></i></a>
+                                                    <ul class="mega-menu mega-menu-two-mobile">
+                                                        <li><a href="">Error 404-1</a></li>
+                                                        <li><a href="">Error 404-2</a></li>
+                                                        <li><a href="">Error 404-3</a></li>
+                                                        <li><a href="">Error 404-4</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="">Coming Soon</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu submenu-container">
+                                        <a href="">Elements<i data-toggle="false"
+                                                class="fa-solid fa-angle-down btn-dropdown-main-menu"></i></a>
+                                        <div class="mega-menu mega-menu-container mega-menu-mobile">
+                                            <div class="row">
+                                                <div class="col-md-3 submenu-mobile">
+                                                    <h4>ELEMENTS 1<i data-toggle="false"
+                                                            class="fa-solid fa-angle-down btn-dropdown-middle-menu"></i>
+                                                    </h4>
+                                                    <ul class="mega-menu-two-mobile">
+                                                        <li><a href="">Accondions</a></li>
+                                                        <li><a href="">Alert & Notification</a></li>
+                                                        <li><a href="">Banner Effect</a> </li>
+                                                        <li><a href="">Banner</a></li>
+                                                        <li><a href="">Blog Posts</a></li>
+                                                        <li><a href="">Breadcrumb</a></li>
+                                                        <li><a href="">Buttons</a></li>
+                                                        <li><a href="">Call to Action</a></li>
+                                                        <li><a href="">Countdown</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3 submenu-mobile">
+                                                    <h4>ELEMENTS 2<i data-toggle="false"
+                                                            class="fa-solid fa-angle-down btn-dropdown-middle-menu"></i>
+                                                    </h4>
+                                                    <ul class="mega-menu-two-mobile">
+                                                        <li><a href="">Counter</a></li>
+                                                        <li><a href="">Creative Grid</a></li>
+                                                        <li><a href="">Entrance Effect</a></li>
+                                                        <li><a href="">Floating</a></li>
+                                                        <li><a href="">Hotspot</a></li>
+                                                        <li><a href="">Icon Boxes</a></li>
+                                                        <li><a href="">Icons</a></li>
+                                                        <li><a href="">Image Box</a></li>
+                                                        <li><a href="">Instagrams</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3 submenu-mobile">
+                                                    <h4>ELEMENTS 3<i data-toggle="false"
+                                                            class="fa-solid fa-angle-down btn-dropdown-middle-menu"></i>
+                                                    </h4>
+                                                    <ul class="mega-menu-two-mobile">
+                                                        <li><a href="">Prodoct Category</a></li>
+                                                        <li><a href="">Products</a></li>
+                                                        <li><a href="">Products + Grid</a></li>
+                                                        <li><a href="">Products + Banner</a></li>
+                                                        <li><a href="">Product Single</a></li>
+                                                        <li><a href="">Products + Tab</a></li>
+                                                        <li><a href="">Single Product</a></li>
+                                                        <li><a href="">Slider</a></li>
+                                                        <li><a href="">Social Icons</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3 submenu-mobile">
+                                                    <h4>ELEMENT 4<i data-toggle="false"
+                                                            class="fa-solid fa-angle-down btn-dropdown-middle-menu"></i>
+                                                    </h4>
+                                                    <ul class="mega-menu-two-mobile">
+                                                        <li><a href="">Subcategory</a></li>
+                                                        <li><a href="">Svg Floating</a></li>
+                                                        <li><a href="">Tabs</a></li>
+                                                        <li><a href="">Sestimonials</a></li>
+                                                        <li><a href="">Title</a></li>
+                                                        <li><a href="">Typography</a></li>
+                                                        <li><a href="">Vendor</a></li>
+                                                        <li><a href="">Video</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="submenu">
+                                        <a href="">Blog<i data-toggle="false" data-flag="false"
+                                                class="fa-solid fa-angle-down btn-dropdown-main-menu "></i></a>
+                                        <div class="mega-menu a-col mega-menu-mobile">
+                                            <ul>
+                                                <li><a href="">Classic</a></li>
+                                                <li><a href="">Listing</a></li>
+                                                <li class="drdw-sub submenu-mobile">
+                                                    <a href="">Grid<i data-toggle="false"
+                                                            class="fa-solid fa-angle-down btn-dropdown-middle-menu"></i></a>
+                                                    <ul class="mega-menu mega-menu-two-mobile">
+                                                        <li><a href="">Grid 2 columns</a></li>
+                                                        <li><a href="">Grid 3 columns</a></li>
+                                                        <li><a href="">Grid 4 columns</a></li>
+                                                        <li><a href="">Grid sidebar</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="drdw-sub submenu-mobile">
+                                                    <a href="">Masonry<i data-toggle="false"
+                                                            class="fa-solid fa-angle-down btn-dropdown-middle-menu"></i></a>
+                                                    <ul class="mega-menu mega-menu-two-mobile">
+                                                        <li><a href="">Masonry 2 columns</a></li>
+                                                        <li><a href="">Masonry 3 columns</a></li>
+                                                        <li><a href="">Masonry 4 columns</a></li>
+                                                        <li><a href="">Masonry sidebar</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="drdw-sub submenu-mobile">
+                                                    <a href="">Mask<i data-toggle="false"
+                                                            class="fa-solid fa-angle-down btn-dropdown-middle-menu"></i></a>
+                                                    <ul class="mega-menu mega-menu-two-mobile">
+                                                        <li><a href="">Blog mask grid</a></li>
+                                                        <li><a href="">Blog mask masonry</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="">Single Post</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="submenu"><a href="">About Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <ul class="header-right content-menu-mobile">
+                            <li><a href="#" class="sale"><span><i class="fa-solid fa-store"></i> </span> special
+                                    offers</a></li>
+                            <li><a href="" class="buy-riode">buy riode!</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </header>
+            <div class="banner">
+                <div class="container">
+                    <div class="owl-carousel owl-theme banner-items">
+                        <div class="item-1">
+                            <img src="icon/banner-slider-1.jpg" alt="">
+                            <div class="contents">
+                                <h4>MEN'S WEAR</h4>
+                                <h2>COLLECTION</h2>
+                                <h5>Start at <span>$19.99</span></h5>
+                            </div>
+                        </div>
+                        <div class="item-2">
+                            <img src="icon/banner-slider-2.jpg" alt="">
+                            <div class="contents">
+                                <h3>Lifestyle collection</h3>
+                                <h4>FOR WOMEN'S</h4>
+                                <h5>SALE UP TO <span>30% OFF</span></h5>
+                                <p>Get Free Shiping on all orders over $99.00</p>
+                                <a href=""> SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row banner-btm">
+                        <div class="col-md-6 col-xs-sm-12 banner-btm-left product-banner">
+                            <div class="col-item">
+                                <img class="img-banner-btm" src="icon/banner-1.jpg" alt="">
+                                <div class="content-banner-btm">
+                                    <h4>new arrivals</h4>
+                                    <h3>women's sale</h3>
+                                    <a href="">shop now <i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-sm-12 banner-btm-right product-banner">
+                            <div class="col-item">
+                                <img class="img-banner-btm" src="icon/banner-2.jpg" alt="">
+                                <div class="content-banner-btm">
+                                    <h4>trending</h4>
+                                    <h3>new sneaker</h3>
+                                    <a href="">shop now <i class="fa-solid fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="container">
+                    <section class="intro-section">
+                        <h2 class="name-intro">best selling</h2>
+                        <div class="row product-menu"></div>
+                    </section>
+                    <section class="product-category">
+                        <div class="top-categories">Top Categories</div>
+                        <div class="row prods-categories">
+                            <div class="col-xs-sm-12 col-md-6 collection-main collection-main-pad">
+                                <div class="wrapper-block">
+                                    <div class="block-cover"></div>
+                                    <img src="icon/category1.jpg" alt="">
+                                    <div class="title-collection">
+                                        <h2>PADDED CLOTHES</h2>
+                                        <h3>Collection</h3>
+                                    </div>
+                                    <div class="btn">
+                                        <button class="women">Women's</button>
+                                        <button class="men">Men's</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-sm-12 col-md-6 collection-main">
+                                <div class="row product-category-right ">
+                                    <div class="prod-right col-xs-12 col-md-12 col-sm-6 collection-aside">
+                                        <div class="wrapper-block">
+                                            <div class="block-cover"></div>
+                                            <img src="icon/category2.jpg" alt="">
+                                            <div class="btn">
+                                                <button class="btn-arrow">Women's T-Shirt<i
+                                                        class="fa-solid fa-arrow-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-right col-xs-12 col-md-12 col-sm-6 collection-aside">
+                                        <div class="wrapper-block">
+                                            <div class="block-cover"></div>
+                                            <img src="icon/category3.jpg" alt="">
+                                            <div class="btn">
+                                                <button class="btn-arrow">Sports & Outdoors<i
+                                                        class="fa-solid fa-arrow-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="on-sale">
+                        <div class="section-sale">
+                            <h4>END OF SEASON</h4>
+                            <div class="through"></div>
+                            <h3>SALE</h3>
+                            <div class="price-info">
+
+                                <div class="up-to">
+                                    AT UP TO
+                                    <span class="persent">50%</span> OFF
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="intro-section">
+                        <h2 class="name-intro name-intro-featured">Our Featured</h2>
+                        <div class=" owl-carousel product-menu-sec">
+                            <div class="product-featured-0 products-row-main-sec"></div>
+                            <div class="product-featured-1 products-row-main-sec"></div>
+                            <div class="product-featured-2 products-row-main-sec"></div>
+                            <div class="product-featured-3 products-row-main-sec"></div>
+                        </div>
+                    </section>
+                    <section class="intro-service">
+                        <div class="wrapper-service">
+                            <div class="owl-carousel service-list">
+                                <div class="service">
+                                    <h3>free delivery</h3>
+                                    <h4>When You Spend $80 or More</h4>
+                                </div>
+                                <div class="service">
+                                    <h3>tracked delivery</h3>
+                                    <h4>Only $6 Standard 6-10 Day</h4>
+                                </div>
+                                <div class="service">
+                                    <h3>need it in hurry</h3>
+                                    <h4>You can Express Shipping in 5 Days</h4>
+                                </div>
+                                <div class="service">
+                                    <h3>30 - day returns</h3>
+                                    <h4>Return Most Items Within 30 Days</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="our-instagram">
+                        <div class="owl-carousel instagram-list">
+                            <div class="instagram-info">
+                                <div class="page-cover">
+                                    <img src="icon/instagram-1.jpg" alt="">
+                                    <div class="block"></div>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+
+                            </div>
+                            <div class="instagram-info">
+                                <div class="page-cover">
+                                    <img src="icon/instagram-2.jpg" alt="">
+                                    <div class="block"></div>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+
+                            </div>
+                            <div class="instagram-info">
+                                <div class="page-cover">
+                                    <img src="icon/instagram-3.jpg" alt="">
+                                    <div class="block"></div>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+
+                            </div>
+                            <div class="instagram-info">
+                                <div class="page-cover">
+                                    <img src="icon/instagram-4.jpg" alt="">
+                                    <div class="block"></div>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+
+                            </div>
+                            <div class="instagram-info">
+                                <div class="page-cover">
+                                    <img src="icon/instagram-5.jpg" alt="">
+                                    <div class="block"></div>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="row footer-middle">
+                        <div class="col-lg-4 col-sm-12 logo-footer">
+                            <img src="icon/logo-footer.png" alt="">
+                            <p>Fringilla urna porttitor rhoncus dolor purus
+                                luctus venenatis lectus magna fringilla diam
+                                maecenas ultricies mi eget mauris.</p>
+                            <a href="#">Riode@example.com</a>
+                        </div>
+                        <div class="col-lg-8 col-sm-12 row content-footer">
+                            <div class="col-sm-4 col-lg-4 inform">
+                                <div class="widget-title">About Us</div>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Order History</a></li>
+                                    <li><a href="#">Returns</a></li>
+                                    <li><a href="#">Custom Service</a></li>
+                                    <li><a href="#">Terms & Condition</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 col-lg-4 inform">
+                                <div class="widget-title">Customer Service</div>
+                                <ul>
+                                    <li><a href="#">Payment Methods</a></li>
+                                    <li><a href="#">Money-back Guarantee!</a></li>
+                                    <li><a href="#">Returns</a></li>
+                                    <li><a href="#">Shipping</a></li>
+                                    <li><a href="#">Terms and Conditions</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 col-lg-4 inform">
+                                <div class="widget-title">My Account</div>
+                                <ul>
+                                    <li><a href="#">Sign In</a></li>
+                                    <li><a href="#">View Cart</a></li>
+                                    <li><a href="#">My Wishlist</a></li>
+                                    <li><a href="#">Track My Order</a></li>
+                                    <li><a href="#">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <img src="icon/payment.png" alt="">
+                        <p>Riode eCommerce © 2022. All Rights Reserved</p>
+                        <div class="inform">
+                            <a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="" class="twiter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript"
+    src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+<script src="../scripts/owl.carousel.min.js"></script>
+<script src="../scripts/demo2.js"></script>
+
+</html>

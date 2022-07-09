@@ -1,0 +1,126 @@
+$deepColor: #222222;
+$lightColor: #898989;
+$colorModal: #999999;
+$deepColorModel: #222222;
+$colorSticky: #ffffff;
+$color-text: #666666;
+$backGroundSticky: #33363b;
+$backgroudlabel: #ff674d;
+$backGroundHeaderMenuBTM: #222529;
+$colorMenuMobile: #e1e1e1;
+.header-btm-mobile {
+    position: absolute;
+    background-color: rgba(#000, 0.8);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2001;
+    overflow-y: auto;
+    .container{
+        padding: 20px 15px;
+        margin:unset;
+        max-width: 296px;
+        width: 100%;
+        height: 100%;
+        background-color: $backGroundHeaderMenuBTM;
+        .input-wrapper-menu{
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            margin-bottom: 10px;
+            input{
+                display: inline-block;
+                box-shadow: 0px 0px 0px 0.5px rgba(203, 203, 203, 0.21);
+                flex: 1;
+                padding: 8.5px 20px ;
+                margin: 1px 0px 1px 1px;
+                color: $lightColor;
+                &::placeholder{
+                    font-size: 12px;
+                    transition: 0.2s;
+                }
+                &:focus{
+                    &::placeholder{
+                        opacity: 0;
+                    }
+                }
+            }
+            .search-wrapper-menu{
+                display: inline-block;
+                width: 40px;
+                height: 100%;
+                color: $colorSticky;
+                background-color: $deepColor;
+                font-size: 12px;
+            }
+        }
+        .header-left {
+            .main-nav {
+                .menu {
+                    >li{
+                        box-shadow: 0px 0.5px 0px 0px rgba(203, 203, 203, 0.21);
+                        &:hover{
+                            a{
+                                color: $backgroudlabel;
+                                i{
+                                    color: rgba($backgroudlabel, 0.5) ;
+                                }
+                            }
+                        }
+                        a{
+                            display: flex;
+                            color:$colorMenuMobile;
+                            height: 45px;
+                            width: 100%;
+                            justify-content: space-between;
+                            font-size: 12px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            transition: 0.3s;
+                            padding: 13px 6px 13px 10px;
+                            i{
+                                padding: 8px;
+                                color: $lightColor;
+                                transform: rotate(-90deg);
+                                transition: 0.3s;
+                                &.rotate-up{
+                                    transform: rotate(-540deg);
+                                }
+                                &.rotate-right{
+                                    transform: rotate(-90deg);
+                                }
+                                &.active{
+                                    transform: rotate(-540deg);
+                                }
+                            }
+                        }
+                    }
+                    .mega-menu {
+                        display: flex;
+                        flex-direction:column;
+                      h4{
+                        color: $colorMenuMobile;
+                      }
+                      ul{
+                          display: none;
+                          li{
+                              a{
+
+                              }
+                          }
+                      }
+                      .col-img{
+                          display: none;
+                      }
+                    }
+                }
+            }
+        }
+        .header-right{
+            .sale{
+                display: none;
+            }
+        }
+    }
+}

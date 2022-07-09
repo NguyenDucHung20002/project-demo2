@@ -1,0 +1,91 @@
+* {
+  font-family: "poppins", sans-serif;
+}
+$deepColor: #222222;
+$lightColor: #898989;
+$colorModal: #999999;
+$deepColorModel: #222222;
+$colorSticky: #ffffff;
+$color-text: #666666;
+$backGroundSticky: #33363b;
+$backgroudlabel: #ff674d;
+@import "../grid";
+@import "../media";
+.hide-scroll {
+  overflow: hidden;
+}
+body {
+  width: 100%;
+}
+.intro-service {
+  padding: 50px 10px;
+  .wrapper-service {
+    border-top: rgba(#999999, 0.3) 1px solid;
+    border-bottom: rgba(#999999, 0.3) 1px solid;
+    .service-list {
+      opacity: 0;
+      transform: translateX(-100px);
+      .service {
+        margin-right: 20px;
+        padding: 24px 0px;
+        text-align: center;
+        h3 {
+          color: #222222;
+          font-weight: 700;
+          line-height: 25.6px;
+          font-size: 16px;
+          text-align: center;
+          text-transform: capitalize;
+        }
+        h4 {
+          color: #222222;
+          font-size: 14px;
+          line-height: 22.4px;
+          text-align: center;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}
+.our-instagram {
+  .instagram-list {
+    .instagram-info {
+      position: relative;
+      margin-right: 20px;
+      img {
+        border-radius: 5px;
+        margin: 5px;
+      }
+      .block {
+        width: 100%;
+        height: 100%;
+        background-color: #222222;
+      }
+      i {
+        display: inline-block;
+        position: absolute;
+        color: #ffffff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 28px;
+      }
+      &:hover {
+        .block {
+        }
+      }
+    }
+  }
+}
+@import "menumobile";
+@import "stickyscrolltop";
+@import "stickywrapper";
+@import "model";
+@import "responsiveheader";
+@import "reponsivebanner";
+@import "product";
+
+@import "_wishlist";
+@import "_cart";
+@import "animation";

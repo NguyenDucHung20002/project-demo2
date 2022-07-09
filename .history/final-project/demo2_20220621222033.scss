@@ -1,0 +1,57 @@
+* {
+  font-family: "poppins", sans-serif;
+}
+$deepColor: #222222;
+$lightColor: #898989;
+$colorModal: #999999;
+$deepColorModel: #222222;
+$colorSticky: #ffffff;
+$color-text: #666666;
+$backGroundSticky: #33363b;
+$backgroudlabel: #ff674d;
+@import "../grid";
+@import "../media";
+.hide-scroll {
+  overflow: hidden;
+}
+body {
+  overflow: hidden;
+  width: 100%;
+}
+
+.wrapper-login-register {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(#222222, 0.7);
+  z-index: 9000;
+  .login-or-register {
+    margin: 0 auto;
+    background-color: #ffffff;
+    max-width: 490px;
+    padding: 40px;
+    .get-form {
+      display: flex;
+      justify-content: center;
+      button {
+        color: #999999;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+      }
+    }
+  }
+}
+@import "menumobile";
+@import "stickyscrolltop";
+@import "stickywrapper";
+@import "model";
+@import "responsiveheader";
+@import "reponsivebanner";
+@import "product";
+@import "footer";
+@import "_wishlist";
+@import "_cart";
+@import "animation";

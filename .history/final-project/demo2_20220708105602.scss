@@ -1,0 +1,129 @@
+* {
+  font-family: "poppins", sans-serif;
+}
+$deepColor: #222222;
+$lightColor: #898989;
+$colorModal: #999999;
+$deepColorModel: #222222;
+$colorSticky: #ffffff;
+$color-text: #666666;
+$backGroundSticky: #33363b;
+$backgroudlabel: #ff674d;
+@import "../grid";
+@import "../media";
+.hide-scroll {
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  //overflow: hidden;
+}
+
+.wrapper-detail-product {
+  overflow: auto;
+  padding: 30px;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(#222222, 0.8);
+  display: flex;
+  align-items: center;
+  z-index: 900;
+  .detail-product {
+    margin: auto auto;
+    max-width: 1018px;
+    background-color: #ffffff;
+    padding: 30px 15px;
+    border-radius: 10px;
+    .detail-img {
+      padding: 10px 30px;
+      position: relative;
+      .slider-dots {
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        transform: translate(-50%);
+        display: flex;
+        .slider-dot-items {
+          transition: 0.3s;
+          cursor: pointer;
+          width: 10px;
+          height: 10px;
+          background-color: #d6d3d3;
+          border-radius: 50%;
+          margin: 3px;
+        }
+        .action-dot {
+          background-color: #666666;
+        }
+      }
+      &:hover {
+        .direction {
+          opacity: 1;
+        }
+      }
+      .direction {
+        &:hover {
+          background-color: #5f5b5b;
+          i {
+            color: #ffffff;
+          }
+        }
+        opacity: 0;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%);
+        transition: 0.3s;
+        cursor: pointer;
+        i {
+          line-height: 31px;
+          transition: 0.3s;
+          font-size: 24px;
+        }
+      }
+      .prev {
+        left: 12px;
+        color: #222222;
+      }
+      .next {
+        right: -12px;
+        color: #222222;
+      }
+      .slider-main {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        .wrapper-img {
+          display: flex;
+          position: relative;
+          transition: 0.3s;
+          .slider-img {
+            flex: 1 0 100%;
+            img {
+              width: 100%;
+              height: 100%;
+              visibility: hidden;
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@import "menumobile";
+@import "stickyscrolltop";
+@import "stickywrapper";
+@import "loginAndRegister";
+@import "model";
+@import "responsiveheader";
+@import "reponsivebanner";
+@import "product";
+@import "footer";
+@import "_wishlist";
+@import "_cart";
+@import "animation";

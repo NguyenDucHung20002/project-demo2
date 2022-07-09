@@ -1,0 +1,90 @@
+.wrpaper-btn {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+
+.wrpaper-btn .btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-bottom: 5px;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.show-product:last-child {
+  opacity: 0;
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  -webkit-animation: show 0.4s ease-out forwards;
+          animation: show 0.4s ease-out forwards;
+}
+
+.hidden-last-product:first-child {
+  -webkit-animation: hidden 0.4s ease-in forwards;
+          animation: hidden 0.4s ease-in forwards;
+}
+
+.hidden-product:first-child {
+  -webkit-animation: hidden 0.4s ease-in forwards;
+          animation: hidden 0.4s ease-in forwards;
+}
+
+.active-added-product {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+}
+
+.active-added-product .added-product {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 180px;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.21);
+          box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.21);
+  margin-top: 30px;
+}
+
+@-webkit-keyframes show {
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes hidden {
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+}
+
+@keyframes hidden {
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+}
+/*# sourceMappingURL=test2.css.map */

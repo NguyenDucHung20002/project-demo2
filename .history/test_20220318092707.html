@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="dist/css/test.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="form-field">
+      <div class="btns">
+        <button data-filter="*">ALL</button>
+        <button data-filter="category-1">category 1</button>
+        <button data-filter="category-2">category 2</button>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 all">
+          <img src="https://picsum.photos/900/900" alt="" />
+        </div>
+        <div class="col-xl-6 category-1">
+          <img src="https://picsum.photos/900/901" alt="" />
+        </div>
+        <div class="col-xl-6 category-2 category-1">
+          <img src="https://picsum.photos/901/901" alt="" />
+        </div>
+        <div class="col-xl-6 category-2">
+          <img src="https://picsum.photos/901/900" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="/scripts/test.js"></script>
+</html>

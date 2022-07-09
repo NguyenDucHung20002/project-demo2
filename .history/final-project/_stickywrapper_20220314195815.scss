@@ -1,0 +1,46 @@
+.sticky-wrapper {
+  position: fixed;
+  right: 10px;
+  top: 200px;
+  overflow: hidden;
+  z-index: 23;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    li {
+      margin-bottom: 5px;
+      //transform: translateX(74%);
+      a {
+        background-color: $backGroundSticky;
+        overflow: hidden;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        &:hover {
+          span {
+            max-width: 150px;
+            margin-right: 10px;
+          }
+        }
+        i {
+          width: 42px;
+          height: 42px;
+          color: $colorSticky;
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        span {
+          transition: all 0.3s linear;
+          color: $colorSticky;
+          max-width: 0;
+          font-size: 14px;
+          font-weight: 600;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

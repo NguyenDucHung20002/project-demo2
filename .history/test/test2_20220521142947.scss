@@ -1,0 +1,25 @@
+.btn{
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  top: 50%;
+  right: 50%;
+  cursor: pointer;
+}
+.active-added-product{
+  position: absolute;
+  bottom: 30%;
+  left: 100px;
+  .added-product{
+    width: 200px;
+    height: 180px;
+    background-color: white;
+    box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.21);
+    margin-top: 30px;
+  }
+}

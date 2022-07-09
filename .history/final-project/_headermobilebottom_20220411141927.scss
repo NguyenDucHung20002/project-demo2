@@ -1,0 +1,215 @@
+$deepColor: #222222;
+$lightColor: #898989;
+$colorModal: #999999;
+$deepColorModel: #222222;
+$colorSticky: #ffffff;
+$color-text: #666666;
+$backGroundSticky: #33363b;
+$backgroudlabel: #ff674d;
+$backGroundHeaderMenuBTM: #222529;
+$colorMenuMobile: #e1e1e1;
+.header-btm-mobile {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    transition: 0.5s;
+    background-color: rgba(#000, 0.8);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2001;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .close-menu-mobile{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        z-index: 2000;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+           transform: rotate(360deg) scale(1.2);
+        }
+        &::after{
+            content: "\f00d";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 700;
+            color: white;
+            font-size: 30px;
+        }
+    }
+    .container{
+        transform: translateX(-100%);
+        transition: 0.5s;
+        padding: 20px 15px;
+        margin:unset;
+        max-width: 296px;
+        overflow-y: auto;
+        width: 100%;
+        height: 100%;
+        background-color: $backGroundHeaderMenuBTM;
+        .input-wrapper-menu{
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+            margin-bottom: 10px;
+            input{
+                display: inline-block;
+                box-shadow: 0px 0px 0px 0.5px rgba(203, 203, 203, 0.21);
+                flex: 1;
+                padding: 8.5px 20px ;
+                margin: 1px 0px 1px 1px;
+                color: $lightColor;
+                &::placeholder{
+                    font-size: 12px;
+                    transition: 0.2s;
+                }
+                &:focus{
+                    &::placeholder{
+                        opacity: 0;
+                    }
+                }
+            }
+            .search-wrapper-menu{
+                display: inline-block;
+                width: 40px;
+                height: 100%;
+                color: $colorSticky;
+                background-color: $deepColor;
+                font-size: 12px;
+            }
+        }
+        @mixin font-text-mobile {
+                color:$colorMenuMobile;
+                height: 45px;
+                width: 100%;
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                transition: 0.3s;
+                @content;
+        }
+        @mixin menu-mobile {
+            >li{
+                box-shadow: 0px 0.5px 0px 0px rgba(203, 203, 203, 0.21);
+                &:hover{
+                    >a{
+                        color: $backgroudlabel;
+                        >i{
+                            color: rgba($backgroudlabel, 0.5) ;
+                        }
+                    }
+                }
+                a{
+                    display: flex;
+                    justify-content: space-between;
+                    @include font-text-mobile();
+                    padding: 13px 6px 13px 10px;
+                    i{
+                        padding: 8px;
+                        color: $lightColor;
+                        transform: rotate(-90deg);
+                        transition: 0.3s;
+                        &.rotate-up{
+                            transform: rotate(-540deg);
+                        }
+                        &.rotate-right{
+                            transform: rotate(-90deg);
+                        }
+                        &.active{
+                            transform: rotate(-540deg);
+                        }      
+                        &:hover{
+                            color: $backgroudlabel;
+                        }                
+                    }
+                }
+            }
+            @content;
+        }
+        .header-left {
+            transform: translateY(150px);
+            transition: 0.5s;
+            .main-nav {
+                .menu {
+                    @include menu-mobile{}
+                    .mega-menu-container{
+                        width: 100%;
+                    }
+                    .a-col{
+                        ul{
+                            @include menu-mobile();
+                        }
+                    }
+                    .mega-menu {
+                        display: none;
+                        .col-md-3{
+                            width: 100%;
+                        }
+                        h4{
+                            display: flex;
+                            justify-content: space-between;
+                            @include font-text-mobile();
+                            box-shadow: 0px 0.5px 0px 0px rgba(203, 203, 203, 0.21);
+                            padding: 13px 6px 13px 20px;
+                            transition: 0.3s;
+                            &:hover{
+                                color: $backgroudlabel;
+                                i{
+                                    color: rgba($backgroudlabel,0.5);
+                                }
+                            }
+                            i{
+                                padding: 8px;
+                                color: $lightColor;
+                                transform: rotate(-90deg);
+                                transition: 0.3s;
+                                cursor: pointer;
+                                &.rotate-up{
+                                    transform: rotate(-540deg);
+                                }
+                                &.rotate-right{
+                                    transform: rotate(-90deg);
+                                }
+                                &.active{
+                                    transform: rotate(-540deg);
+                                }
+                                &:hover{
+                                    color: $backgroudlabel;
+                                }                  
+                            }
+                        }
+                        .mega-menu-two-mobile{
+                            display: none;
+                            @include menu-mobile{
+                                >li{
+                                    padding-left: 20px;
+                                    @include font-text-mobile();
+                                    &:last-child{
+                                        box-shadow: 0px 0px 0px 0px rgba(203, 203, 203, 0);
+                                    }
+                                }
+                            }
+                        }
+                        .col-img{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .header-right{
+            transition: 0.5s;
+            transform: translateY(150px);
+            padding: 13px 6px 13px 10px;
+            .buy-riode{
+                @include font-text-mobile();
+            }
+            .sale{
+                display: none;
+            }
+        }
+    }
+}

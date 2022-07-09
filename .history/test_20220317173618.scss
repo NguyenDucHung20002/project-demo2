@@ -1,0 +1,9 @@
+@import "grid";
+.row {
+  .col-xl-6 {
+    color: white;
+    background-color: black;
+    border: 3px solid red;
+    box-sizing: border-box;
+  }
+}

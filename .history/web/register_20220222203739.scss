@@ -1,0 +1,19 @@
+@import "grid";
+@import "media";
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products {
+  max-width: 1200px;
+  .container {
+    .row {
+      img {
+      }
+      h2 {
+      }
+    }
+  }
+}

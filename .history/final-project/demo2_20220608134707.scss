@@ -1,0 +1,113 @@
+* {
+  font-family: "poppins", sans-serif;
+}
+$deepColor: #222222;
+$lightColor: #898989;
+$colorModal: #999999;
+$deepColorModel: #222222;
+$colorSticky: #ffffff;
+$color-text: #666666;
+$backGroundSticky: #33363b;
+$backgroudlabel: #ff674d;
+@import "../grid";
+@import "../media";
+.hide-scroll {
+  overflow: hidden;
+}
+body {
+  width: 100%;
+}
+.product-category {
+  .top-categories {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    line-height: 28.8px;
+    margin: 30px 0px 26px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .prods-categories {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 3px;
+    }
+    .hov-block-cover {
+      padding: 10px;
+      position: relative;
+
+      .block-cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $deepColor;
+        margin: 10px;
+        z-index: 1;
+      }
+      &:hover {
+      }
+    }
+    .collection-main {
+      @include xsToSm {
+        max-height: 430px;
+      }
+      padding: 10px;
+      .title-collection {
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        text-align: center;
+        h2 {
+          font-size: 24px;
+          font-weight: 600;
+          letter-spacing: -0.24px;
+          line-height: 36px;
+          color: $deepColor;
+        }
+        h3 {
+          letter-spacing: -0.24px;
+          font-size: 24px;
+          font-weight: 200;
+          color: #666666;
+        }
+      }
+      .btn {
+        display: flex;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        button {
+          padding: 17px 39px;
+          background-color: rgba($colorSticky, 0.9);
+          border-radius: 2px;
+          color: #222222;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 16.8px;
+          &.women {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@import "menumobile";
+@import "stickyscrolltop";
+@import "stickywrapper";
+@import "model";
+@import "responsiveheader";
+@import "reponsivebanner";
+@import "product";
+
+@import "_wishlist";
+@import "_cart";
+@import "animation";

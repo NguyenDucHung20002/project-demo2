@@ -1,0 +1,18 @@
+$cols: 12;
+$gutter: 10px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$gutter/2;
+  //1 to 12 --> 1,2,3,4,...,11
+  //1 thourgh 12 --> 1,2,3,4,...12
+  @for $var from 1 through $cols {
+    .col-#{$var} {
+      width: (100% / $cols) * $var;
+      padding: 0 $gutter / 2;
+      .col-item {
+        margin: 0 5px;
+      }
+    }
+  }
+}

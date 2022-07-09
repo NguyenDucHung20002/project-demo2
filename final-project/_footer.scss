@@ -1,0 +1,114 @@
+footer {
+  background-color: #222222;
+  .footer-middle {
+    @include xs {
+      flex-direction: column;
+    }
+    padding: 86px 10px 46px;
+    border-bottom: rgba(#999999, 0.3) 1px solid;
+    .logo-footer {
+      img {
+        width: 150px;
+        height: 43px;
+      }
+      p {
+        width: 300px;
+        color: #999999;
+        font-size: 13px;
+        letter-spacing: -0.13px;
+        line-height: 24.05px;
+        margin: 0px 0px 28px;
+      }
+    }
+    a {
+      color: #999999;
+      display: inline;
+      font-size: 13px;
+      line-height: 20.8px;
+      transition: 0.3s;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+    .content-footer {
+      @include xs {
+        flex-direction: column;
+      }
+      @include xsToMd {
+        margin-top: 20px;
+      }
+      .inform {
+        .widget-title {
+          color: #e1e1e1;
+          font-weight: 600;
+          line-height: 19.2px;
+          margin: 0px 0px 9px;
+          padding: 6px 0px;
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    display: flex;
+    @include lg {
+      justify-content: space-between;
+    }
+    @include xsToMd {
+      flex-direction: column;
+      align-items: center;
+      .inform {
+        margin-bottom: 60px;
+      }
+      p {
+        margin-bottom: 30px;
+      }
+      img {
+        margin-bottom: 30px;
+      }
+    }
+    padding: 28px 0;
+    p {
+      color: #666666;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: -0.14px;
+      line-height: 21px;
+    }
+    .inform {
+      a {
+        display: inline-block;
+        margin-left: 5px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        border: #999999 2px solid;
+        transition: 0.3s;
+        &:hover {
+          &.facebook {
+            background-color: #3b5998;
+            border-color: #3b5998;
+          }
+          &.twiter {
+            background-color: #1da1f2;
+            border-color: #1da1f2;
+          }
+          &.linkedin {
+            background-color: #0073b2;
+            border-color: #0073b2;
+          }
+          i {
+            color: #ffffff;
+          }
+        }
+        i {
+          transition: 0.3s;
+          display: inline-block;
+          color: #999999;
+          line-height: 28px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

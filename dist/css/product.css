@@ -1,0 +1,102 @@
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+}
+
+.container .products .product {
+  border-radius: 5px;
+  width: 288px;
+  height: 323px;
+  border: 1px solid black;
+  margin-right: 40px;
+  background-color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .products .product img {
+  width: 130px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.container .products .product .name-product {
+  color: #0066ff;
+  margin: 10px;
+}
+
+.container .products .product .price {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.container .products .product .buy {
+  padding: 10px 90px;
+  border-radius: 5px;
+  background-color: #4ac74a;
+  color: white;
+  cursor: pointer;
+}
+
+.container .detail {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container table thead tr th {
+  width: 200px;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  padding: 8px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.container table thead tr :first-child {
+  width: 400px;
+}
+
+.container table tbody tr td {
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  padding: 8px;
+  font-size: 20px;
+}
+
+.container table tbody tr td .btn-remove {
+  padding: 10px 20px;
+  background-color: red;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.container table tfoot tr td {
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  padding: 8px;
+  font-size: 20px;
+}
+/*# sourceMappingURL=product.css.map */

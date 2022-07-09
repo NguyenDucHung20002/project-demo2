@@ -1,0 +1,204 @@
+$deepColor: #222222;
+$lightColor: #898989;
+$colorSticky: #ffffff;
+@mixin liMainInNav {
+  height: 40px;
+  > a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 13px 0;
+    letter-spacing: -0.35px;
+    line-height: 14px;
+    color: $deepColor;
+    position: relative;
+    > i {
+      margin-left: 8px;
+      font-size: 13px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1.5px;
+      right: 0;
+      bottom: 10px;
+      width: 0;
+      background: $deepColor;
+      transition: all 0.5s ease;
+    }
+    @content;
+  }
+}
+@mixin allADropdwon {
+  &:hover {
+    > a {
+      color: $deepColor;
+    }
+  }
+  > a {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 7px 0px 7px 10px;
+    color: $lightColor;
+    transition: all 0.2s;
+  }
+  @content;
+}
+@mixin dropdownHeaderTop {
+  .col-md-3 {
+    padding: 18px 10px 8px;
+    h4 {
+      padding: 0 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: -0.35px;
+      line-height: 14px;
+    }
+    ul {
+      li {
+        @include allADropdwon();
+      }
+    }
+  }
+  .col-img {
+    padding: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  @content;
+}
+.header-bottom {
+  margin-bottom: 15px;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .header-left {
+      .main-nav {
+        margin-left: 3px;
+        .menu {
+          display: flex;
+          .submenu {
+            position: relative;
+            @include liMainInNav {
+            }
+            .mega-menu {
+              @include dropdownHeaderTop;
+              visibility: hidden;
+              opacity: 0;
+              top: 80%;
+              left: -19px;
+              min-width: 940px;
+              position: absolute;
+              background-color: $colorSticky;
+              box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.21);
+              z-index: 10;
+              padding: 10px;
+              &.cover-1130 {
+                @media (max-width: 1130px) {
+                  margin-left: -134px;
+                }
+              }
+              &.mega-menu-container {
+                left: -24%;
+                margin-left: -377px;
+              }
+              &.a-col {
+                padding: 20px 0;
+                min-width: 226px;
+                > ul {
+                  li {
+                    padding: 0 20px;
+                    width: 100%;
+                    position: relative;
+                    @include allADropdwon();
+                    &.drdw-sub {
+                      i {
+                        position: absolute;
+                        display: inline-block;
+                        font-size: 12px;
+                        text-align: right;
+                        right: 30px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                      }
+                      .mega-menu {
+                        position: absolute;
+                        padding: 20px 0;
+                        min-width: 226px;
+                        left: 100%;
+                        top: -80%;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: none;
+                      }
+                      &:hover {
+                        .mega-menu {
+                          transition: top 0.2s ease-out;
+                          top: -57%;
+                          visibility: visible;
+                          opacity: 1;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &:hover {
+              ::after {
+                width: 100%;
+                left: 0;
+              }
+              .mega-menu {
+                visibility: visible;
+                opacity: 1;
+                top: 100%;
+                transition: all 0.2s;
+              }
+            }
+          }
+          .active {
+            @include liMainInNav {
+              &::after {
+                content: "";
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .header-right {
+      display: flex;
+      align-items: center;
+      a {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: -0.35px;
+        line-height: 22.4px;
+        color: $deepColor;
+        text-transform: capitalize;
+      }
+      .sale {
+        margin-right: 30px;
+        span {
+          display: inline-block;
+          line-height: 20px;
+          text-align: center;
+          margin-right: 5px;
+          i {
+            font-size: 14px;
+            color: $deepColor;
+          }
+        }
+      }
+    }
+  }
+}

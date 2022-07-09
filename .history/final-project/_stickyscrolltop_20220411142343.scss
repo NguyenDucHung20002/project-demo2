@@ -1,0 +1,40 @@
+@import "../media";
+@include xsToMd {
+  .sticky-scroll {
+    display: none;
+  }
+}
+@include lg {
+  body {
+    position: relative;
+  }
+  .active-scroll {
+    animation: active-scroll 0.3s forwards linear;
+  }
+  .hide-scrolltop {
+    animation: hide-scroll 0.3s forwards linear;
+  }
+  .sticky-scroll {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    height: 60px;
+    width: 60px;
+    background-color: $colorSticky;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.21);
+    text-align: center;
+    justify-content: center;
+    i {
+      display: inline-block;
+      color: $deepColor;
+      font-size: 20px;
+      line-height: 60px;
+    }
+  }
+}
+
+@import "animation";

@@ -1,0 +1,59 @@
+h2 {
+  height: 1200px;
+  background-color: pink;
+}
+
+.loading {
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.loading span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  -webkit-animation: load 2s alternate infinite ease-in;
+          animation: load 2s alternate infinite ease-in;
+}
+
+.loading :nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.loading :nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+@-webkit-keyframes load {
+  from {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    opacity: 0.9;
+  }
+  to {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes load {
+  from {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    opacity: 0.9;
+  }
+  to {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0.5;
+  }
+}
+/*# sourceMappingURL=animation.css.map */
